@@ -34,7 +34,7 @@
         defaults = 
         {
             color: "chroma",
-            maxColumns:4,
+            maxColumns:6,
             items:null,
             dof:false, //experimental
             screenOpacity:0.95,

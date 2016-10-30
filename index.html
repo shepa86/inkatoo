@@ -8,6 +8,7 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" href="css/chromagallery.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <script src="https://use.fontawesome.com/585cd7a827.js"></script>
 </head>
@@ -45,22 +46,22 @@
                 </article>
             </div>
         </div>
-        <div>
-            <ul>
-                <li class="gallery gallery-6"><img class="tatoo_design" src="img/row1-1.jpg" alt="photo1"></li>
-                <li class="gallery gallery-6"><img class="tatoo_design" src="img/row1-2.jpg" alt="photo2"></li>
-                <li class="gallery gallery-6"><img class="tatoo_design" src="img/row1-3.jpg" alt="photo3"></li>
-                <li class="gallery gallery-6"><img class="tatoo_design" src="img/row1-4.jpg" alt="photo4"></li>
-                <li class="gallery gallery-6"><img class="tatoo_design" src="img/row1-5.jpg" alt="photo5"></li>
-                <li class="gallery gallery-6"><img class="tatoo_design" src="img/row1-6.jpg" alt="photo6"></li>
-                <li class="gallery gallery-6"><img class="tatoo_design" src="img/row2-1.jpg" alt="photo1"></li>
-                <li class="gallery gallery-6"><img class="tatoo_design" src="img/row2-2.jpg" alt="photo2"></li>
-                <li class="gallery gallery-6"><img class="tatoo_design" src="img/row2-3.jpg" alt="photo3"></li>
-                <li class="gallery gallery-6"><img class="tatoo_design" src="img/row2-4.jpg" alt="photo4"></li>
-                <li class="gallery gallery-6"><img class="tatoo_design" src="img/row2-5.jpg" alt="photo5"></li>
-                <li class="gallery gallery-6"><img class="tatoo_design" src="img/row2-6.jpg" alt="photo6"></li>
-            </ul>
+        <div class="chroma-gallery mygallery">
+            <img src="img/row1-1.jpg" alt="Pic 1" data-largesrc="img/row1-1.jpg">
+            <img src="img/row1-2.jpg" alt="Pic 1" data-largesrc="img/row1-2.jpg">
+            <img src="img/row1-3.jpg" alt="Pic 1" data-largesrc="img/row1-3.jpg">
+            <img src="img/row1-4.jpg" alt="Pic 1" data-largesrc="img/row1-4.jpg">
+            <img src="img/row1-5.jpg" alt="Pic 1" data-largesrc="img/row1-5.jpg">
+            <img src="img/row1-6.jpg" alt="Pic 1" data-largesrc="img/row1-6.jpg">
+            <img src="img/row2-1.jpg" alt="Pic 1" data-largesrc="img/row2-1.jpg">
+            <img src="img/row2-2.jpg" alt="Pic 1" data-largesrc="img/row2-2.jpg">
+            <img src="img/row2-3.jpg" alt="Pic 1" data-largesrc="img/row2-3.jpg">
+            <img src="img/row2-4.jpg" alt="Pic 1" data-largesrc="img/row2-4.jpg">
+            <img src="img/row2-5.jpg" alt="Pic 1" data-largesrc="img/row2-5.jpg">
+            <img src="img/row2-6.jpg" alt="Pic 1" data-largesrc="img/row2-6.jpg">
+           
         </div>
+        
         <div class="blockquote blockquote1-bg overflow">
             <p class="blockquote-quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, sapiente quam maxime fuga reprehenderit perspiciatis impedit consequuntur!</p>
             <p class="blockquote-autor">- Jone Doe -</p>
@@ -203,7 +204,14 @@
         <div class="logotype"><img src="img/logo.png" alt="Logotype"></div>
         <div class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i>2014  InkTattoo. All rights reserved - Designed by theuncreativelab.com</div>
     </footer>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/chromagallery.pkgd.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() 
+        {
+            $(".mygallery").chromaGallery();
+        });
+    </script>
 </body>
 
 </html>
