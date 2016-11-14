@@ -418,6 +418,7 @@ header {
     color: #fff;
     cursor: pointer;
     border: none;
+    text-transform: uppercase;
 }
 
 .button_small {
